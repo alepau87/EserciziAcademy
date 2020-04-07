@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallAAD_APP", "CallAAD_APP\CallAAD_APP.csproj", "{FE365B94-9539-47B0-850A-34577CDE0DC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE365B94-9539-47B0-850A-34577CDE0DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE365B94-9539-47B0-850A-34577CDE0DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE365B94-9539-47B0-850A-34577CDE0DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE365B94-9539-47B0-850A-34577CDE0DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5B4D28A-BFC2-497F-A0C2-2136635E79BB}
+	EndGlobalSection
+EndGlobal

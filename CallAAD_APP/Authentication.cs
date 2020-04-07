@@ -1,4 +1,5 @@
 ﻿using Microsoft.Identity.Client;
+using Microsoft.SharePoint.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,27 @@ namespace CallAAD_APP
             }
         }
 
+
+        public static async Task<ClientContext> GetSPOnlineContext(string siteUrl, string token)
+        {
+ 
+            try
+            {
+               
+                ClientContext clientContext = new ClientContext(siteUrl);
+                clientContext.ExecutingWebRequest += delegate (object sender, WebRequestEventArgs args)
+                {
+                    args.WebRequestExecutor.WebRequest.Headers.Add("Authorization", "Bearer " + token);
+                };
+              
+                return clientContext;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }
 
     }
 }

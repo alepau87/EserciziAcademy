@@ -10,6 +10,11 @@ namespace CallAAD_APP
     {
         static void Main(string[] args)
         {
+            AuthModel authModel = new AuthModel();
+
+            var access = Authentication.GetS2SAccessToken(authModel);
+
+           var token = access.Result.AccessToken;
         }
     }
 }

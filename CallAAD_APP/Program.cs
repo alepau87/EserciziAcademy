@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.SharePoint.Client;
 
 namespace CallAAD_APP
 {
@@ -14,7 +15,11 @@ namespace CallAAD_APP
 
             var access = Authentication.GetS2SAccessToken(authModel);
 
-           var token = access.Result.AccessToken;
+            var token = access.Result.AccessToken;
+
+            ClientContext context = Authentication.GetSPOnlineContext("https://m365x013432.sharepoint.com/sites/ContosoWeb1", token);
+
+            SharepointOperations.UploadFileOnSharepoint(context);
         }
     }
 }

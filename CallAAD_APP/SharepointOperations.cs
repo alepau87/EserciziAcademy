@@ -15,9 +15,9 @@ namespace CallAAD_APP
     {
 
 
-        private static void UploadFileOnSharepoint(ClientContext context)
+        public static void UploadFileOnSharepoint(ClientContext context)
         {
-            string filePath = ConfigurationSettings.AppSettings["ClientSecret"];
+            string filePath = ConfigurationSettings.AppSettings["FilePath"];
 
             using (FileStream fileStream = File.OpenRead(filePath))
             {

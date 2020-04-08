@@ -33,7 +33,7 @@ namespace CallAAD_APP
         }
 
 
-        public static async Task<ClientContext> GetSPOnlineContext(string siteUrl, string token)
+        public static ClientContext GetSPOnlineContext(string siteUrl, string token)
         {
  
             try

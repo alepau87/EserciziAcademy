@@ -24,7 +24,7 @@ namespace CallAAD_APP
                 String fileName = System.IO.Path.GetFileName(filePath);
                 Web web = context.Web;
 
-                context.Load(web.Lists);
+                context.Load(web);
                 context.ExecuteQuery();
 
                 List library = web.Lists.GetByTitle("DocumentiAlessio");

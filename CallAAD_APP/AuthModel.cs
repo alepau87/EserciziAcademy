@@ -13,6 +13,7 @@ namespace CallAAD_APP
             AppId = ConfigurationSettings.AppSettings["AppId"];
             Authority = ConfigurationSettings.AppSettings["Authority"];
             Url = ConfigurationSettings.AppSettings["Url"];
+            auth = new Authentication();
         }
 
 
@@ -20,6 +21,8 @@ namespace CallAAD_APP
         public string AppId { get; set; }
         public string Authority { get; set; }
         public string Url { get; set; }
+        public Authentication auth { get; set; }
+
 
     }
 }

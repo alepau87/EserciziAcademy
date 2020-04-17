@@ -15,7 +15,8 @@ namespace CallAAD_APP
 
             var access = await authModel.auth.GetS2SAccessToken(authModel);
 
-          
+            authModel.auth.GetSPOnlineContext("https://m365x013432.sharepoint.com/", access);
+            
         }
     }
 }

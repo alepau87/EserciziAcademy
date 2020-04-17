@@ -9,7 +9,7 @@ using Microsoft.SharePoint.Client;
 using File = System.IO.File;
 using SharepointFile = Microsoft.SharePoint.Client.File;
 
-namespace CallAAD_APP
+namespace CallAAD_Certificate
 {
     public static class SharepointOperations
     {
